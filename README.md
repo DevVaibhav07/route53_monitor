@@ -87,4 +87,4 @@ Logs are stored in `route53_monitor.log` with the following information:
 
 ## Support
 
-For support, please open an issue in the repository or contact [your contact information].
+For support, please open an issue in the repository or contact vaibhav.kubade@juspay.in
