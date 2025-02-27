@@ -145,4 +145,4 @@ Logs are stored in `route53_monitor.log` with the following information:
 
 ## Support
 
-For support, please open an issue in the repository or contact dev.vaibhavk@google.com
+For support, please open an issue in the repository or contact dev.vaibhavk@gmail.com
