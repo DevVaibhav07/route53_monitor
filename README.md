@@ -97,7 +97,7 @@ python3 route53_monitor.py --loop
 ### Jenkins Pipeline
 
 The pipeline will:
-- Run automatically every minute
+- Run every 12 hours (at 00:00 and 12:00)
 - Install dependencies
 - Execute the monitor
 - Archive logs
@@ -145,4 +145,4 @@ Logs are stored in `route53_monitor.log` with the following information:
 
 ## Support
 
-For support, please open an issue in the repository or contact vaibhav.kubade@juspay.in
+For support, please open an issue in the repository or contact dev.vaibhavk@google.com
