@@ -6,8 +6,8 @@ pipeline {
     }
     
     triggers {
-        // Run every minute
-        cron('* * * * *')
+        // Run every 12 hours (at 00:00 and 12:00)
+        cron('0 */12 * * *')
     }
     
     stages {
