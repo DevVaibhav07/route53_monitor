@@ -48,7 +48,32 @@ route53-monitor --loop # Run continuous monitoring
 ### AWS IAM Setup
 
 1. Create an IAM role with Route53 read permissions
+
+Required IAM Policy:
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "route53:ListHostedZones",
+                "route53:ListResourceRecordSets"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
+
 2. Attach the role to your Jenkins instance
+
+For different Jenkins environments:
+- EC2: Attach the IAM role directly to the EC2 instance
+- ECS/EKS: Use service account/IAM role for the container
+- Other environments: Use AWS credentials provider plugin with assumed role
+
+No AWS access keys are required as the script uses IAM role-based authentication.
 
 ## Usage
 
